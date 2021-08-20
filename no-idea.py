@@ -1,0 +1,5 @@
+n,m = input().split()
+elements = input().split()
+likes = set(input().split())
+dislikes = set(input().split())
+print(sum((i in likes) - (i in dislikes) for i in elements))
